@@ -1,0 +1,162 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+.active {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 80px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-container {
+    padding: 15px;
+    width: 30%;
+    border-radius: 40px;
+    margin: 5px;
+    /* padding-top: 10px; */
+    background-color: #ffffff;
+}
+
+.card-container{
+    font-weight: bold;
+    font-size: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card1-container,
+.card5-container,
+.card9-container,
+.card13-container,
+.card17-container,
+.card21-container,
+.card25-container,
+.card29-container,
+.card33-container,
+.card37-container,
+.card41-container{
+    background: url("../images/paraBlue.jpg");
+}
+
+.card2-container,
+.card6-container,
+.card10-container,
+.card14-container,
+.card18-container,
+.card22-container,
+.card26-container,
+.card30-container,
+.card34-container,
+.card38-container,
+.card42-container{
+    background: url("../images/paraBrown");
+}
+
+.card3-container,
+.card7-container,
+.card11-container,
+.card15-container,
+.card19-container,
+.card23-container,
+.card27-container,
+.card31-container,
+.card35-container,
+.card39-container,
+.card43-container{
+    background: url("../images/paraGrey.jpg");
+}
+
+.card4-container,
+.card8-container,
+.card12-container,
+.card16-container,
+.card20-container,
+.card24-container,
+.card28-container,
+.card32-container,
+.card36-container,
+.card40-container{
+    background: url("../images/paraPink.jpg");
+}
+
+
+
+.inactive {
+    display: none;
+}
+
+.listBtnClass {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.listBtnClass .btnView {
+    --c: goldenrod;
+    color: var(--c);
+    font-size: 16px;
+    border: 0.3em solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+
+.listBtnClass .btnView span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+.listBtnClass .btnView:hover {
+    color: black;
+}
+
+.listBtnClass .btnView:hover span {
+    transform: translateY(0) scale(2);
+}
+
+.listBtnClass .btnView span:nth-child(1) {
+    --n: 1;
+}
+
+.listBtnClass .btnView span:nth-child(2) {
+    --n: 2;
+}
+
+.listBtnClass .btnView span:nth-child(3) {
+    --n: 3;
+}
+
+.listBtnClass .btnView span:nth-child(4) {
+    --n: 4;
+}
