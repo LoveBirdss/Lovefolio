@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./style/home.css" />
 
-</head>
-<body>
-    <nav>
-        
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <p class="logo">KM</p>
+        <div class="nav-content">
+          <p><a class="nav-link nav-link-active" href="/">HOME</a></p>
+          <p><a class="nav-link" href="./pages/memories.html">MEMORIES</a></p>
+          <p><a class="nav-link" href="./pages/journey.html">JOURNEY</a></p>
+        </div>
+      </div>
     </nav>
-</body>
+    <section class="img-grid">
+        <img class="img-home" src="./images/home_img1.png" alt="">
+        <article>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </article>
+    </section>
+    <script src="./scripts/image.js"></script>
+  </body>
 </html>

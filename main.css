@@ -1,7 +1,44 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 
-*{
-    --color-theme: '#F3F8FF'
+:root{
+    --color-theme: #F3F8FF;
+    --color-black: #000
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+.nav{
+    width: 100%;
+    background: var(--color-theme);
+}
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px 0;
+    gap: 48px;
+}
+.logo{
+    flex: 0.5;
+    margin-left: 10px;
+    width: 100%;
+}
+.nav-content{
+    font-family: 'Salsa', cursive;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 80px;
+    width: 100%;
+}
+.nav-link{
+    color: var(--color-black);
+    text-decoration: none;
+}
+.nav-link-active{
+    text-decoration: underline;
+    text-underline-offset: 10px;
 }
