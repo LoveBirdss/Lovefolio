@@ -1,183 +1,427 @@
-h6, p {
-    font-family: sans-serif;
+@import "compass/css3";
+
+
+h6,
+p {
+  font-family: sans-serif;
+}
+
+.c-heroImageGrid {
+  position: relative;
+  overflow: hidden;
+  height: 50vw;
+  background: #fff;
+  margin-bottom: 60px;
+}
+
+.c-heroImageGrid .container {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  top: -20vw;
+  left: -8vw;
+  transform: rotateZ(45deg);
+  height: 100vw;
+  width: 107vw;
+}
+
+.c-heroImageGrid .container .column {
+  overflow: hidden;
+  position: relative;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(1) {
+  border-right: 8px solid white;
+  width: 25%;
+  height: 66vw;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(1):hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(1):before {
+  position: absolute;
+  top: 8.4vw;
+  left: 8.1vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateZ(-45deg);
+  content: "";
+  width: 37vw;
+  height: 38vw;
+  background-image: url("../images/home_img3.png");
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 75%;
+  height: 109.1vw;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row {
+  border-top: 8px solid #fff;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(1) {
+  position: relative;
+  overflow: hidden;
+  height: 50vw;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(1):hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(1):before {
+  position: absolute;
+  top: -10.1vw;
+  left: -14.3vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateZ(-45deg);
+  content: "";
+  width: 65vw;
+  height: 39vw;
+  background-image: url("../images/home_img1.png");
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) {
+  display: flex;
+  height: 40.5vw;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(3) {
+  border-top: none;
+}
+
+.c-heroImageGrid
+  .container
+  .column:nth-of-type(2)
+  .row:nth-of-type(2)
+  div:nth-of-type(1) {
+  overflow: hidden;
+  width: 30%;
+  background-color: #8b8b8a;
+}
+
+.c-heroImageGrid
+  .container
+  .column:nth-of-type(2)
+  .row:nth-of-type(2)
+  div:nth-of-type(1)
+  .text {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  transform: rotateZ(-45deg);
+  position: relative;
+}
+
+.c-heroImageGrid
+  .container
+  .column:nth-of-type(2)
+  .row:nth-of-type(2)
+  div:nth-of-type(1)
+  .text
+  h6 {
+  position: absolute;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.35vw;
+  width: 20vw;
+  top: 16vw;
+  left: 7vw;
+  line-height: 1.55vw;
+}
+
+.c-heroImageGrid
+  .container
+  .column:nth-of-type(2)
+  .row:nth-of-type(2)
+  div:nth-of-type(1)
+  .text
+  p {
+  text-align: right;
+  position: absolute;
+  color: #fff;
+  font-size: 0.9vw;
+  width: 18vw;
+  top: 23.5vw;
+  left: -3.5vw;
+}
+
+.c-heroImageGrid
+  .container
+  .column:nth-of-type(2)
+  .row:nth-of-type(2)
+  div:nth-of-type(2) {
+  position: relative;
+  width: 70%;
+  border-left: 8px solid white;
+  overflow: hidden;
+}
+
+.c-heroImageGrid
+  .container
+  .column:nth-of-type(2)
+  .row:nth-of-type(2)
+  div:nth-of-type(2):hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.c-heroImageGrid
+  .container
+  .column:nth-of-type(2)
+  .row:nth-of-type(2)
+  div:nth-of-type(2):before {
+  position: absolute;
+  top: 0;
+  left: -40vw;
+  width: 110.1vw;
+  height: 110vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateZ(-45deg);
+  content: "";
+  background-image: url("../images/home_img1.png");
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(3) {
+  position: relative;
+  height: 18.6vw;
+  overflow: hidden;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(3):hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(3):before {
+  position: absolute;
+  top: 7.5vw;
+  left: 25vw;
+  width: 33vw;
+  height: 27vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotateZ(-45deg);
+  content: "";
+  background-image: url("../images/home_img2.png");
+}
+
+
+
+/* Showbox cube section (on right side) */
+.cube__section {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 60%;
+}
+
+/* The cube - where the fun begins :) ===========================*/
+
+/* The cube outer container */
+.cube {
+  height: 20rem;
+  perspective: 60rem;
+  width: 20rem;
+}
+
+/* The cube's inner container */
+/* Note: rotationBox keyframes is placed right at the end */
+.cube__container {
+  animation: rotationBox 20s linear infinite forwards;
+  height: 100%;
+  position: relative;
+  transform: translateZ(-10rem);
+  transform-style: preserve-3d;
+  width: 100%;
+}
+
+/* This will target every single side of the cubez */
+.cube__face {
+  align-items: center;
+  background-color: #eee;
+  display: flex;
+  height: 20rem;
+  justify-content: center;
+  overflow: hidden;
+  position: absolute;
+  width: 20rem;
+}
+
+/* This will target an individual side of the cube */
+.cube__face--front {
+  transform: rotateY(0deg) translateZ(10rem);
+}
+.cube__face--back {
+  transform: rotateY(180deg) translateZ(10rem);
+}
+.cube__face--left {
+  transform: rotateY(-90deg) translateZ(10rem);
+}
+.cube__face--right {
+  transform: rotateY(90deg) translateZ(10rem);
+}
+.cube__face--top {
+  transform: rotateX(90deg) translateZ(10rem);
+}
+.cube__face--bottom {
+  transform: rotateX(-90deg) translateZ(10rem);
+}
+
+/* Videos ==============================================================*/
+
+/* Specifically targeting the <video> element */
+.video__container {
+  height: auto;
+  min-height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Responsive ============================================================*/
+
+/* Tablet */
+@media only screen and (max-width: 48em) {
+  /* CSS Reset */
+
+  html {
+    font-size: 56.25%;
   }
-  
-  .c-heroImageGrid {
-      position: relative;
-      overflow: hidden;
-      height: 50vw;
-      background: #fff;
-      margin-bottom: 60px;
+
+  /* Typography */
+
+  /* Signup heading */
+  .main-heading {
+    width: 100%;
   }
-  
-  .c-heroImageGrid .container {
-      display: flex;
-      align-items: flex-end;
-      position: absolute;
-      top: -20vw;
-      left: -8vw;
-      transform: rotateZ(45deg);
-      height: 100vw;
-      width: 107vw;
+
+  /* Layout */
+
+  .main {
+    flex-direction: column-reverse;
+    height: 100%;
   }
-  
-  .c-heroImageGrid .container .column {
-      overflow: hidden;
-      position: relative;
+
+  /* Signup section (on left side) */
+  .signup-section {
+    height: 100%;
+    margin-left: 0;
+    width: 100%;
   }
-  
-  .c-heroImageGrid .container .column:nth-of-type(1) {
-      border-right: 8px solid white;
-      width: 25%;
-      height: 66vw;
+
+  /* Container for heading, text, and button  */
+  .signup-box {
+    height: 100%;
+    padding: 3rem 2rem;
+    text-align: center;
   }
-  
-  .c-heroImageGrid .container .column:nth-of-type(1):hover {
-      opacity: 0.75;
-      cursor: pointer;
+
+  /* Showbox cube section (on right side) */
+  .cube__section {
+    height: 100vh;
+    width: 100%;
   }
-  
-  .c-heroImageGrid .container .column:nth-of-type(1):before {
-      position: absolute;
-      top: 8.4vw;
-      left: 8.1vw;
-      background-repeat: no-repeat;
-      background-size: cover;
-      transform: rotateZ(-45deg);
-      content: "";
-      width: 37vw;
-      height: 38vw;
-      background-image: url('../images/home_img3.png');
+}
+
+/* Mobile */
+@media only screen and (max-width: 22.5em) {
+  /* Typography */
+
+  /* Signup text */
+  .body-text {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
   }
-  
-  
-  .c-heroImageGrid .container .column:nth-of-type(2) {
-      display: flex;
-      flex-direction: column-reverse;
-      width: 75%;
-      height: 109.1vw;
+
+  /* Layout */
+
+  /* Signup section (on left side) */
+  .signup-section {
+    height: 100%;
+    margin-left: 0;
+    width: 100%;
   }
-  
-  .c-heroImageGrid .container .column:nth-of-type(2) .row {
-      border-top: 8px solid #fff;
+
+  /* Container for heading, text, and button  */
+  .signup-box {
+    height: 100%;
+    padding: 3rem;
+    padding-top: 1rem;
+    text-align: center;
   }
-  
-  
-  .c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(1) {
-      position: relative;
-      overflow: hidden;
-      height: 50vw;
+
+  /* Showbox cube section (on right side) */
+  .cube__section {
+    height: 60vh;
+    width: 100%;
   }
-  
-  .c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(1):hover {
-      opacity: 0.75;
-      cursor: pointer;
+
+  /* The cube outer container */
+  .cube {
+    height: 15rem;
+    perspective: 60rem;
+    width: 15rem;
   }
-  
-  .c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(1):before {
-      position: absolute;
-      top: -10.1vw;
-      left: -14.3vw;
-      background-repeat: no-repeat;
-      background-size: cover;
-      transform: rotateZ(-45deg);
-      content: "";
-      width: 65vw;
-      height: 39vw;
-      background-image: url('../images/home_img1.png');
+
+  /* The cube's inner container */
+  .cube__container {
+    transform: translateZ(-7.5rem);
   }
-  
-  .c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) {
-      display: flex;
-      height: 40.5vw;
+
+  /* This will target every single side of the cubes */
+  .cube__face {
+    height: 15rem;
+    width: 15rem;
   }
-  
-  .c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(3) {
-      border-top: none;
+
+  /* This will target an individual side of the cube */
+  .cube__face--front {
+    transform: rotateY(0deg) translateZ(7.5rem);
   }
-  
-  .c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(1) {
-      overflow: hidden;
-      width: 30%;
-      background-color: #8B8B8A;
+  .cube__face--back {
+    transform: rotateY(180deg) translateZ(7.5rem);
   }
-  
-  .c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(1) .text {
-      width: 100%;
-      height: 100%;
-      overflow: visible;
-      transform: rotateZ(-45deg);
-      position: relative;
+  .cube__face--left {
+    transform: rotateY(-90deg) translateZ(7.5rem);
   }
-  
-  .c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(1) .text h6 {
-      position: absolute;
-      color: #fff;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 1.35vw;
-      width: 20vw;
-      top: 16vw;
-      left: 7vw;
-      line-height: 1.55vw;
+  .cube__face--right {
+    transform: rotateY(90deg) translateZ(7.5rem);
   }
-  
-  .c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(1) .text p {
-      text-align: right;
-      position: absolute;
-      color: #fff;
-      font-size: 0.9vw;
-      width: 18vw;
-      top: 23.5vw;
-      left: -3.5vw;
+  .cube__face--top {
+    transform: rotateX(90deg) translateZ(7.5rem);
   }
-  
-  .c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(2) {
-      position: relative;
-      width: 70%;
-      border-left: 8px solid white;
-      overflow: hidden;
+  .cube__face--bottom {
+    transform: rotateX(-90deg) translateZ(7.5rem);
   }
-  
-  .c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(2):hover {
-      opacity: 0.75;
-      cursor: pointer;
+}
+
+/* Animation ============================================================*/
+
+@keyframes rotationBox {
+  0% {
+    transform: rotate3d(0, 0, 0, 0deg);
   }
-  
-  .c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(2) div:nth-of-type(2):before {
-      position: absolute;
-      top: 0;
-      left: -40vw;
-      width: 110.1vw;
-      height: 110vw;
-      background-repeat: no-repeat;
-      background-size: cover;
-      transform: rotateZ(-45deg);
-      content: "";
-      background-image: url('../images/home_img1.png');
+  25% {
+    transform: rotate3d(0, 1, 1, 90deg);
   }
-  
-  .c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(3) {
-      position: relative;
-      height: 18.6vw;
-      overflow: hidden;
+  50% {
+    transform: rotate3d(1, 0, 1, 180deg);
   }
-  
-  .c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(3):hover {
-      opacity: 0.75;
-      cursor: pointer;
+  75% {
+    transform: rotate3d(1, 1, 0, 240deg);
   }
-  
-  .c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(3):before {
-      position: absolute;
-      top: 7.5vw;
-      left: 25vw;
-      width: 33vw;
-      height: 27vw;
-      background-repeat: no-repeat;
-      background-size: cover;
-      transform: rotateZ(-45deg);
-      content: "";
-      background-image: url('../images/home_img2.png');
+  100% {
+    transform: rotate3d(1, 1, 1, 360deg);
   }
-  
+}
