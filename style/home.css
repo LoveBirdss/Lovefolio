@@ -1,6 +1,5 @@
 @import "compass/css3";
 
-
 h6,
 p {
   font-family: sans-serif;
@@ -11,7 +10,6 @@ p {
   overflow: hidden;
   height: 50vw;
   background: #fff;
-  margin-bottom: 60px;
 }
 
 .c-heroImageGrid .container {
@@ -181,15 +179,15 @@ p {
   .row:nth-of-type(2)
   div:nth-of-type(2):before {
   position: absolute;
-  top: 0;
-  left: -40vw;
-  width: 110.1vw;
-  height: 110vw;
+  top: -11vw;
+  left: -16vw;
+  width: 65.1vw;
+  height: 54vw;
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotateZ(-45deg);
   content: "";
-  background-image: url("../images/home_img1.png");
+  background-image: url("../images/home_img4.jpeg");
 }
 
 .c-heroImageGrid .container .column:nth-of-type(2) .row:nth-of-type(3) {
@@ -216,8 +214,13 @@ p {
   background-image: url("../images/home_img2.png");
 }
 
-
-
+.about_section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: '#FAF9F6';
+}
 /* Showbox cube section (on right side) */
 .cube__section {
   align-items: center;
@@ -225,6 +228,7 @@ p {
   height: 100vh;
   justify-content: center;
   width: 60%;
+  flex: 1;
 }
 
 /* The cube - where the fun begins :) ===========================*/
@@ -406,6 +410,24 @@ p {
   }
 }
 
+
+.about_content{
+  flex: 1;
+  text-align: left;
+  padding: 0 40px 0 50px;
+}
+
+.about_content_head{
+  font-size: 54px;
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+.about_content_para{
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 28px;
+}
 /* Animation ============================================================*/
 
 @keyframes rotationBox {
